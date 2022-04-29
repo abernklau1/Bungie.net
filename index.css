@@ -1,0 +1,138 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: absolute;
+}
+
+nav {
+  display: flex;
+  background-color: transparent;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+}
+
+.logo-container {
+  width: 15%;
+  height: 100%;
+}
+
+.bungie-logo {
+  width: 75%;
+  height: 100%;
+  margin: 0 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 100px;
+  z-index: 1;
+  transform: translate();
+}
+
+.dropdown-content a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  min-height: 50px;
+  min-width: 225px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dropdown-content a:hover {
+  background-color: goldenrod;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropdown-btn {
+  border-bottom: 3px solid goldenrod;
+}
+
+.dropdown-btn {
+  padding: 1rem;
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.dropdown-btn:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.middle-nav {
+  display: flex;
+  width: 72.5%;
+}
+
+.nav-right {
+  display: flex;
+  flex-grow: 1;
+}
+
+.play-btn-container {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.play-btn {
+  background-color: rgba(218, 165, 32, 0.8);
+  border: 1px solid gold;
+  height: 55%;
+  width: 8rem;
+  margin: 17.5px 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.play-btn:hover {
+}
+
+.icons {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+.icons a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.icons a:hover {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.icon {
+  margin: 10px;
+}
+
+.background-img {
+  background-image: url(https://www.bungie.net/pubassets/pkgs/157/157065/d2_witch_queen_launch_homepage_hero-desktop-bg_1.jpg);
+  height: 600px;
+}
+
+.dropdown-content a div {
+  font-size: 0.8rem;
+}
+
+.secondary-label {
+  color: #4f4f4f;
+  font-weight: 900;
+}
